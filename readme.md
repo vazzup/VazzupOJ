@@ -2,13 +2,16 @@
 An Online Judge written in JAVA<br/>
 Takes source code, compiles and executes the program <br/>
 ###Languages supported:<br/>
-*C
-*C plus plus
-*Java
-
+<ul>
+<li>C</li>
+<li>C plus plus</li>
+<li>Java</li>
+</ul>
 ###Features to be added:<br/>
-*Run against input files
-*Compare output files
-*Multiple testcase
-*Database functionality
-*Website with applet
+<ul>
+<li>Run against input files</li>
+<li>Compare output files</li>
+<li>Multiple testcase</li>
+<li>Database functionality</li>
+<li>Website with applet</li>
+</ul>
