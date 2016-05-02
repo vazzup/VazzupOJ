@@ -1,0 +1,8 @@
+#!/bin/bash
+#Script to compile and execute Java programs, for VazzupOJ
+echo "Compiling program..."
+javac ./res/programs/$1.java
+echo "Compiled successfully..."
+echo "Executing program..."
+java -cp ./res/programs/ $1
+echo "Executed successfully"
