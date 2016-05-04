@@ -9,7 +9,7 @@ Takes source code, compiles and executes the program <br/>
 </ul>
 ###Features to be added:<br/>
 <ul>
-<li>Run against input files</li>
+<li>~~Run against input files~~</strike></li>
 <li>Compare output files</li>
 <li>Multiple testcase</li>
 <li>Database functionality</li>
