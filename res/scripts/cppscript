@@ -1,8 +1,11 @@
 #!/bin/bash
 #Script to compile and execute C++ programs, for VazzupOJ
+#First argument - FileName
+#Second argument - input file
+#third argument - output file
 echo "Compiling program..."
 g++ ./res/programs/$1.cpp -o ./res/programs/$1.o
 echo "Compiled successfully..."
 echo "Executing program..."
-./res/programs/$1.o
+./res/programs/$1.o <
 echo "Executed successfully"

@@ -1,5 +1,8 @@
 #!/bin/bash
 #Script to compile and execute C programs, for VazzupOJ
+#First argument - FileName
+#Second argument - input file
+#third argument - output file
 echo "Compiling program..."
 cc ./res/programs/$1.c -o ./res/programs/$1.o
 echo "Compiled successfully..."
