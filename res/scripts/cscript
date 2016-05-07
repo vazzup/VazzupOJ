@@ -1,11 +1,17 @@
 #!/bin/bash
 #Script to compile and execute C programs, for VazzupOJ
 #First argument - FileName
-#Second argument - input file
-#third argument - output file
+#Second argument - Input file
 echo "Compiling program..."
-cc ./res/programs/$1.c -o ./res/programs/$1.o
+gcc ./res/programs/$1.c -o ./res/programs/$1.o
 echo "Compiled successfully..."
 echo "Executing program..."
-./res/programs/$1.o
+if [[-z $1 && -z $2]]; then
+	./res/programs/$1.o
+else
+	./res/programs/$1.o <./res/testcases/$2.in >./res/tescases/$2.test.out
+	python3 compare.py $2
+fi
+rm ./res/testcases/$2.test.out
+rm ./res/programs/$1.o
 echo "Executed successfully"

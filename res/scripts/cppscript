@@ -2,10 +2,16 @@
 #Script to compile and execute C++ programs, for VazzupOJ
 #First argument - FileName
 #Second argument - input file
-#third argument - output file
 echo "Compiling program..."
 g++ ./res/programs/$1.cpp -o ./res/programs/$1.o
 echo "Compiled successfully..."
 echo "Executing program..."
-./res/programs/$1.o <
+if [-z "$3"] && [-z "$2"]; then
+	./res/programs/$1.o
+else
+	./res/programs/$1.o <./res/testcases/$2.in >./res/testcases/$2.test.out
+	python3 compare.py $2
+fi
+rm ./res/programs/$1.o
+rm ./res/testcases/$2.test.out
 echo "Executed successfully"
